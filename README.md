@@ -1,32 +1,32 @@
-# FIND-TODO
+# find-todos
 
-This is a tool to search for TODOs in a directory
+Search for TODOs in a directory
 
 ## Installation
 
-find-todos is a node module available via npm. You can install it using
+find-todos is a node module available via npm. To install:
 
-`npm install --g find-todo`
+Run `npm install find-todos`
 
 ## Usage
 
-Tool can be run in the terminal or in code, with 2 optional arguments: directory path and search key.
+### 1. Add the following script to your package.json scripts
 
-directoryPath: Directory to search in. Default: Current terminal directory
+```"find-todos": "find-todos <directoryPath> <searchKey>"```
 
-searchKey: Key word to search for. Default: "TODO"
+Parameters (optional):
 
-### In terminal
+`directoryPath`: Directory to search in. Default: Project root directory
 
-`node find-todo <directoryPath> <searchKey>`
+`searchKey`: Key word to search for. Default: "TODO"
 
-Default directory_path: Current terminal directory
+### 2. Run command
 
-Default search_key: "TODO"
+`node run find-todos`
 
 Example:
 ```console
-$ node find-todo ./sample
+$ node run find-todos
 Searching for files with keyword TODO in ./sample
 ./sample/somedir/anotherdir/anotherfile.js - 1
    3: // TODO: ???
@@ -37,31 +37,6 @@ Searching for files with keyword TODO in ./sample
 Found 4 result(s) in 2 file(s)
 ```
 
-### In code
+---
 
-`todoSearch(directoryPath, searchKey)`
-
-```javascript
-var todoSearch = require("todo-search");
-
-await todoSearch("./sample");
-// returns
-{
-    "totalCount": 4,
-    "files": {
-        "./sample/somedir/anotherdir/anotherfile.js": {
-            "lines": {
-                "3": "// TODO: ???"
-            },
-            "keywordCount": 1
-        },
-        "./sample/somefile.js": {
-            "lines": {
-                "1": "// TODO TODO TODO"
-            },
-            "keywordCount": 3
-        }
-    },
-    "searchKey": "TODO"
-}
-```
+[npm package](https://www.npmjs.com/package/find-todos)

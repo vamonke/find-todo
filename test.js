@@ -45,3 +45,8 @@ test("allows searching with another keyword", async () => {
   expect(file.keywordCount).toEqual(count);
   expect(file.lines[lineNo]).toEqual(line);
 });
+
+test("returns an empty object if no arguments are provided", async () => {
+  const results = await findTodo();
+  expect(results).toEqual({});
+});
