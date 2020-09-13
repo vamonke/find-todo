@@ -1,0 +1,21 @@
+{
+  "name": "find-todos",
+  "version": "1.0.0",
+  "description": "Find files containing TODO in a directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Varick Lim",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "keywords": [
+    "search",
+    "find"
+  ],
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
