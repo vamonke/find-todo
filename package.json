@@ -17,5 +17,13 @@
   ],
   "devDependencies": {
     "jest": "^26.4.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamonke/find-todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vamonke/find-todo/issues"
+  },
+  "homepage": "https://github.com/vamonke/find-todo#readme"
 }
