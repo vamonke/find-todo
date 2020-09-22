@@ -22,7 +22,7 @@ Parameters (optional):
 
 ### 2. Run command
 
-`node run find-todos`
+`npm run find-todos`
 
 Example:
 ```console
