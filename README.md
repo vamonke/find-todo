@@ -26,7 +26,7 @@ Parameters (optional):
 
 Example:
 ```console
-$ node run find-todos
+$ npm run find-todos
 Searching for files with keyword TODO in ./sample
 ./sample/somedir/anotherdir/anotherfile.js - 1
    3: // TODO: ???
