@@ -1,6 +1,6 @@
 {
   "name": "find-todos",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Find files containing TODO in a directory",
   "main": "index.js",
   "scripts": {
